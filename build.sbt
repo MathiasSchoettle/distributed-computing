@@ -6,3 +6,8 @@ lazy val root = (project in file("."))
   .settings(
     name := "distributed-computing"
   )
+
+libraryDependencies ++= Seq(
+    "com.github.kiprobinson" % "bigfraction" % "1.1.0"
+)
+
