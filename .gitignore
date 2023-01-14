@@ -6,38 +6,7 @@ Codespaces
 Marketplace
 Explore
 @MathiasSchoettle
-scala /
-scala
 Public
-
-Fork your own copy of scala/scala
-
-Code
-Pull requests 32
-Actions
-Security
-
-    Insights
-
-scala/.gitignore
-@som-snytt
-som-snytt Ignore .bsp
-Latest commit fec763f Jan 14, 2022
-History
-16 contributors
-@SethTisue
-@lrytz
-@retronym
-@paulp
-@diesalbla
-@dwijnand
-@adriaanm
-@viktorklang
-@szeiger
-@som-snytt
-@NthPortal
-@kiritsuku
-69 lines (57 sloc) 1.11 KB
 #
 # Are you tempted to edit this file?
 #
@@ -107,19 +76,3 @@ jitwatch.out
 project/**/metals.sbt
 
 .bsp
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-
-    Terms
-    Privacy
-    Security
-    Status
-    Docs
-    Contact GitHub
-    Pricing
-    API
-    Training
-    Blog
-    About
-
