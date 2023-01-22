@@ -1,0 +1,22 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+option java_multiple_files = true;
+option java_package = "api.grpc";
+option java_outer_classname = "MessagingService";
+
+message Message {
+  string id = 1;
+  string text = 2;
+  string senderId = 3;
+}
+
+message User {
+  string name = 1;
+  string password = 2;
+}
+
+service MessagingService {
+  rpc test(Message) returns (Message);
+  rpc send(stream Message) returns (google.protobuf.Empty);
+  rpc receive(User) returns (stream Message);
+}
