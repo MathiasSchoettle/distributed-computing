@@ -6,7 +6,7 @@ import java.util.concurrent.ForkJoinPool
 import scala.language.postfixOps
 
 object ForkJoinAppPerf extends App {
-	private val numberCount = 10000
+	private val numberCount = 1000
 
 	private val numbers = LazyList.continually((new BigInteger(150000, new Random()), new BigInteger(15000, new Random())))
 	  .take(numberCount)
@@ -40,7 +40,7 @@ object ForkJoinAppPerf extends App {
 	}
 
 	private def test(pool: ForkJoinPool, description: String, threshold: Int): Unit = {
-		val task = new BigFractionTask(numbers, threshold)
+		val task = new BigFractionTaskTest(numbers, threshold)
 		val startStealCount = pool.getStealCount
 
 		System.gc()
